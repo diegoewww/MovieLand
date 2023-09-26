@@ -29,9 +29,10 @@ const App = ()=>{
   return(
     <div className="app">
       <h1>MovieLand</h1>
+      <p className='color-white'>Descubre una amplia selección de emocionantes nombres de películas en esta página web que te sorprenderá.</p>
       <div className="search">
         <input 
-          placeholder="Search for movies"
+          placeholder="Buscar películas"
           value={searchTerm}
           onChange={(e)=>setSearchTerm(e.target.value)}
         />
@@ -51,7 +52,7 @@ const App = ()=>{
             </div>
         ) : (
             <div className="empty">
-              <h2>No movies found </h2>
+              <h2>No se encontraron películas.</h2>
             </div>
         )
       }
